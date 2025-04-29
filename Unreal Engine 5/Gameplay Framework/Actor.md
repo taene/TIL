@@ -107,6 +107,7 @@
 - 액터를 선택하면 Transform Gizmo(화살표, 회전 핸들, 스케일 박스) 가 나타납니다.
 - W, E, R 키를 사용해 이동, 회전, 스케일 모드로 전환 가능 (기본 단축키)
 - Shift+드래그 등을 활용해 정밀하게 배치하거나, Snap 기능으로 그리드 단위로 정렬할 수도 있습니다.
+
 ![Image](https://github.com/user-attachments/assets/60cf4385-b987-4992-a01d-2617573659b1)
 <br/>
 
