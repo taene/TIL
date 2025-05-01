@@ -30,4 +30,7 @@
 ![image](https://github.com/user-attachments/assets/d626ea81-226c-4e86-8ee4-6a1b44253fa1)
 - 잘 적용된 모습이다.
 
+![CharacterMove](https://github.com/user-attachments/assets/6732c36a-8abf-4391-8260-34da36eacb38)
+
+
 <br/>
