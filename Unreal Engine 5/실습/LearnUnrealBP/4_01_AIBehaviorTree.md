@@ -42,7 +42,7 @@
 - 플레이어가 AI 캐릭터에 근접하면, TargetPosition을 플레이어 캐릭터의 위치로 설정함
 - New Decorator > BTDecorator_BlueprintBase > BTD 생성(BTD_IsNearPlayer)
 
-![image](https://github.com/user-attachments/assets/ade31b3c-8414-496d-8396-1c42b4c7fce2)
+![image](https://github.com/user-attachments/assets/9ec957c3-0931-46b3-9990-3d5254938a0b)
 - Perform Condition Check: 값이 True면 해당 작업을 실행, False면 실행하지 않는 함수(오버라이드)
 - Get Actor Location | Make Array | Sphere Overlap Actors: 캐릭터 주변을 구형으로 탐색하여, 범위 안의 모든 폰을 반환
 - Get Player Pawn | Find: 반환된 폰 중 플레이어 캐릭터를 검색하여, 플레이어 캐릭터가 있으면 데코레이터의 Return Value를 True, 아니면 False를 반환
@@ -62,11 +62,11 @@
   - Transform Location(0,0,0) / Scale or Brush Settings로 영역 설정
 
 #### 6. Finding Random Event 할당
-![image](https://github.com/user-attachments/assets/a1637f58-4d6e-4b48-a18f-95db123fa10c)
+![image](https://github.com/user-attachments/assets/0a1a40b4-f2da-4b01-901c-e42d29abe1a7)
 - 갈 수 있는 영역을 검색하고 갈 수 있다면 블랙보드의 TargetPosition 값을 해당 위치로 할당해줌
 - GetRandomLocationInNavigableRadius: 특정 위치에서부터 반경을 잡아 그 안에 랜덤으로 포지션을 정해줌(Navigation 시스템 안에서만 정상 작동)
 
-![image](https://github.com/user-attachments/assets/c5938743-0770-41f2-8e6e-2240f85efcf7)
+![image](https://github.com/user-attachments/assets/abc60e41-fa82-425f-8f3c-9f1756f54abe)
 - TargetPosition에 도달 시 다음에 이동할 새로운 TargetPosition을 지정해야 함
 - 프레임 마다 실행되는 Tick 이벤트를 추가하고 TargetPosition에 도달하게 되면 새로운 TargetPosition을 재검색 하도록 함
 
