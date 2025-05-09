@@ -42,7 +42,7 @@
 - 플레이어가 AI 캐릭터에 근접하면, TargetPosition을 플레이어 캐릭터의 위치로 설정함
 - New Decorator > BTDecorator_BlueprintBase > BTD 생성(BTD_IsNearPlayer)
 
-![image](https://github.com/user-attachments/assets/9ec957c3-0931-46b3-9990-3d5254938a0b)
+![image](https://github.com/user-attachments/assets/b6ac1771-ed6d-448f-b9ec-6246927a882f)
 - Perform Condition Check: 값이 True면 해당 작업을 실행, False면 실행하지 않는 함수(오버라이드)
 - Get Actor Location | Make Array | Sphere Overlap Actors: 캐릭터 주변을 구형으로 탐색하여, 범위 안의 모든 폰을 반환
 - Get Player Pawn | Find: 반환된 폰 중 플레이어 캐릭터를 검색하여, 플레이어 캐릭터가 있으면 데코레이터의 Return Value를 True, 아니면 False를 반환
