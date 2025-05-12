@@ -9,6 +9,10 @@
 ### 배운 개념 요약
 - Persistent Level: 영구적인 레벨, 마스터 맵, 항상 로드되는 맵
 - Streaming Level: 다른 맵을 마스터 맵으로 불러올 수 있는데, 이를 Streaming한다고 하고, 불리는 맵을 Streaming Level이라 함
+- GameMode/Widget/Character
+  - 중요한 게임 로직은 GameMode에
+  - UI 표시 기능은 Widget에
+  - 캐릭터의 동작 로직은 Character에
 
 <br/>
 
