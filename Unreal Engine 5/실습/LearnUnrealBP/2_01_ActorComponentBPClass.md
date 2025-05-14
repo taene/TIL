@@ -20,10 +20,11 @@
   - 클래스 간에 가능함
 - Class: 설계도
 - Instance: 구현체(객체)
-- Actor Instance를 BP Class로 변환: Actor를 스크립트 작동방식을 가질 수 있는 재사용 가능한 BP Class로 변환함
-  - New Subclass(새 서브클래스): 선택된 부모 클래스에서 상속된 새 BP Class Instance로 선택된 Actor를 대체함(**현재 액터 인스턴스의 부모 클래스를, Actor Class의 Child Class 중 하나를 선택해, 변환하여 BP Class 생성**)
-  - Cild Actors(자손 액터): 선택된 각 액터가 자손 액터로 포함되어 있는 선택된 부모 클래스에서 상속된 새 BP Class Instance로 선택된 액터를 대체함(**현재 액터 인스턴스를 다른 액터의 자식으로 변환하여 BP Class 생성**)
-  - Harvest Components(컴포넌트 수집): 컴포넌트를 포함하는 선택된 부모 클래스에서 상속된 새 BP Class Instance로 선택된 액터를 대체함(**현재 액터 인스턴스의 Component만 묶어서 가져온 새 BP Class 생성**)
+#### Actor Instance를 BP Class로 변환
+- Actor를 스크립트 작동방식을 가질 수 있는 재사용 가능한 BP Class로 변환함
+  - New Subclass(새 서브클래스): 현재 액터 인스턴스의 부모 클래스의 Child Class 중 하나를 선택해, 현재 액터의 부모 클래스로 바꿔 BP Class 생성
+  - Cild Actors(자손 액터): 새로운 액터를 만들고 그 액터 밑에 자식 액터로 해당 액터를 넣음
+  - Harvest Components(컴포넌트 수집): 컴포넌트들만 모아 새 액터를 만들고 그 액터안에 컴포넌트를 다시 넣음
 
 <br/>
 
