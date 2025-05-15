@@ -35,8 +35,3 @@
   - Project Settings > Platforms > Windows > Game Icon 바꾸기(.ico 파일)
 
 <br/>
-
-## 느낀점
-- 
-
-<br/>
