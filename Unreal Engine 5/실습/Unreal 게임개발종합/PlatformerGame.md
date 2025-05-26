@@ -26,3 +26,8 @@
 [PlatformerGame](https://drive.google.com/file/d/13drgpj2N0saLd1POUp8YUH41joMRh4-s/view?usp=sharing)
 
 <br/>
+
+### 아쉬운점
+- 현재 HidePlat은 슉 사라지고 슉 나타나는데, Timeline을 사용해서 Fade in Fade out으로 서서히 사라지고 나타나는걸 구현하고 싶었는데 잘 안됐다.
+
+<br/>
