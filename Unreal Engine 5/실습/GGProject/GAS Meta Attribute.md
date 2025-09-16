@@ -1,11 +1,9 @@
 ## 학습 키워드 
 
-  * Gameplay Ability System (GAS)
   * ExecutionCalculation
   * AttributeSet
   * Meta Attribute (메타 어트리뷰트)
   * Direct Modification (직접 수정)
-  * Software Architecture
   * Separation of Concerns (SoC, 역할 분리 원칙)
 
 <br/>
