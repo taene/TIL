@@ -1,8 +1,8 @@
-# BaseAttack Ability - FireProjectile Task - ProjectileActor 관계도
+# 투사체 Ability - 투사체 발사 Task - 투사체 Actor 관계도
 
 ## 개요
 
-이 문서는 Arcanist 캐릭터의 기본 공격 시스템을 구성하는 세 가지 핵심 클래스 간의 유기적인 관계를 설명합니다.
+이 문서는 투사체 시스템을 구성하는 세 가지 핵심 클래스(어빌리티 - 어빌리티 태스크 - 액터) 간의 유기적인 관계를 설명합니다.
 
 ---
 
