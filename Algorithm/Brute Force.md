@@ -87,3 +87,85 @@ bool hasWord(int y, int x, const string& word)
 	2. 가능한 모든 답의 후보를 만드는 과정을 여러 개의 선택으로 나눈다. 각 선택은 답의 후보를 만드는 과정의 한 조각이 된다.
 	3. 그중 하나의 조각을 선택해 답의 일부를 만들고, 나머지 답을 재귀 호출을 통해 완성한다.
 	4. 조각이 하나밖에 남지 않은 경우, 혹은 하나도 남지 않은 경우에는 답을 생성했으므로, 이것을 기저 사례로 선택해 처리한다.
+
+---
+
+- 문제: N과 N개의 자연수가 주어진다. 여기서 몇개의 숫자를 골라 합을 mod 11을 했을 때 나오는 가장 큰 수를 구하라.
+- 입력:
+10    
+24 35 38 40 49 59 60 67 83 98
+
+```cpp
+// 첫번째 풀이
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int n;
+vector<int> v;
+
+int ret(int idx, int sum)
+{
+    if (idx == n)
+    {
+        return sum % 11;
+    }
+
+    return max(ret(idx + 1, sum + v[idx]), ret(idx + 1, sum));
+}
+
+int main()
+{
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        int temp;
+        cin >> temp;
+        v.push_back(temp);
+    }
+
+    cout << ret(0, 0) << '\n';
+
+    return 0;
+}
+```
+
+```cpp
+// 다른 풀이
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int n, cnt, ret, temp;
+vector<int> v;
+
+void go(int idx, int sum)
+{
+    if (idx == n)
+    {
+        ret = max(ret, sum % 11);
+        cnt++;
+        return;
+    }
+    go(idx + 1, sum + v[idx]);
+    go(idx + 1, sum);
+}
+
+int main()
+{
+    cin >> n;
+    for (int i = 0; i < n; i++)
+    {
+        cin >> temp;
+        v.push_back(temp);
+    }
+
+    go(0,0);
+    cout << ret << '\n';
+    cout << cnt << '\n';
+
+    return 0;
+}
+```
